@@ -1551,7 +1551,7 @@ module Sinatra
     set :running, false                   # is the built-in server running now?
     set :server, %w[thin mongrel webrick]
     set :bind, '0.0.0.0'
-    set :port, 28973
+    set :port, $PORT
 
     set :absolute_redirects, true
     set :prefixed_redirects, false
